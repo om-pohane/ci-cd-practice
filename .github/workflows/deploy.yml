@@ -4,7 +4,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - code-review
+      - develop
 
 jobs:
   deploy:
