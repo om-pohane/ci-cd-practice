@@ -24,7 +24,7 @@ public class StudentController {
 
     // POST http://localhost:8080/api/students
     // @RequestBody converts the JSON body into a Student object
-    @PostMapping("/create")
+    @PostMapping
     public Student createStudent(@RequestBody Student student)
     {
         return studentService.createStudent(student);
