@@ -11,6 +11,19 @@ so the student can be restored later.
 2. Run `./mvnw spring-boot:run`.
 3. The API runs at `http://localhost:8080`. The `students` table is created automatically.
 
+## Run with Docker
+
+You only need Docker Desktop. Java, Maven and MySQL are not needed on your machine.
+
+```bash
+docker compose up --build      # build and start the app + MySQL
+docker compose down            # stop (data is kept)
+docker compose down -v         # stop and delete the database data
+```
+
+The API runs at `http://localhost:8080`. MySQL is reachable from your Mac at `localhost:3307`
+(user `root`, password `root`).
+
 ## Files
 
 | File | What it does |
