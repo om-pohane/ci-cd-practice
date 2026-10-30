@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/students") // every URL in this class starts with /api/students
+@RequestMapping("/api/student") // every URL in this class starts with /api/students
 public class StudentController {
 
     @Autowired
