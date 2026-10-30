@@ -31,7 +31,7 @@ jobs:
 
       - name: Build and push image
         run: |
-          docker build -t ompohane/practice-2-app:v1 .
+          docker build --platform linux/arm64 -t ompohane/practice-2-app:v1 .
           docker push ompohane/practice-2-app:v1
 
       - name: Deploy to EC2
